@@ -1,10 +1,16 @@
 # YouTube Downloader
 This is my first personal project, created to help me practice and improve my Python skills.
 
-## Installation:
+## Installation
 Before running the program, make sure you have the following installed: 
 - [Python](https://www.python.org/)
-- [FFmpeg](https://ffmpeg.org/)
+- [FFmpeg](https://ffmpeg.org/) — used for audio and video conversion
+
+### Installing Tkinter (if necessary):
+Tkinter is used as the graphical user interface (GUI) for this project. It usually comes with standard Python installations, but on some Linux systems you may need to install it manually.
+```bash
+sudo apt install python3-tk
+```
 
 ## Dependencies
 This project uses the following third-party library:
@@ -14,6 +20,16 @@ You can install it with:
 ```bash
 pip install yt-dlp
 ``` 
+
+## Features
+* **Video and Audio Download**: Download video or audio-only (MP3 format)
+* **Quality Selection**: Choose the video resolution or audio bitrate
+* **Progress Bar**: Displays a progress bar with download percentage and updates in real-time
+* **Selectable Download Directory**: *Choose and save your download folder for future sessions.
+* **Copy and Paste Menu**: Right-click on the input fields to easily copy and paste URLs or file paths
+
+_*The setting is stored in a file located in your Documents folder._
+
 ## Packaging the Application
 Before packaging the script, make sure you have uncommented the following lines in main.py:
 ```bash
